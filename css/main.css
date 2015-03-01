@@ -606,6 +606,9 @@ h4 {
 		bottom:0;
 		
 	}
+	.register, .venue p a {
+		font-weight:normal;
+	}
 	.overlay a {
 		top:171px !important;
 	}
