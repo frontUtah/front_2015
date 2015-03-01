@@ -70,8 +70,7 @@ body {
 	line-height: 84px;
 	font-weight:300;
 	font-style:italic;
-	max-width:1024px;
-	margin:auto;
+	width:100%;
 }
 .nav_bar h3 span {
 	background:url("../img/sprite.svg") 100px -1301px  ;
@@ -136,7 +135,7 @@ body {
 .about {
 	width:100%;
 	margin:auto;
-	background: #42BA9F;
+	background: #3CB59A;
 	text-align:center;
 	padding-top:55px;
 }
@@ -256,6 +255,10 @@ h4 {
 #dayone {
 	background:url("../img/sprite.svg") no-repeat 70px -900px;
 }
+
+#underbelly {
+	background:url("../img/sprite.svg") no-repeat 116px -0;
+}
 #impacthub {
 	background:url("../img/sprite.svg") no-repeat 116px -1100px;
 }
@@ -284,11 +287,13 @@ h4 {
 
 
 .featured_speakers {
-	width:1024px;
-	height:452px;
-	margin:auto;
+	width:100%;
+	height:415px;
 	background:url("../img/bg_featured_speakers.jpg");
 	position:relative;
+	background-position: 50%;
+	background-size: cover;
+	margin: 0 auto;
 }
 .featured_speakers .overlay {
 	background:url("../img/blue_mtns.svg") no-repeat;
@@ -302,18 +307,20 @@ h4 {
 	background:url("../img/sprite.svg") no-repeat 0 -500px;
 	color: #fff;
 }
+.featured_speakers a {
+	top:196px;
+}
 #peter {
 	background: url("../img/headshots_featured.png") no-repeat scroll 0 33px;
     color: white;
     font-size: 16px;
     font-weight: 900;
     height: 256px;
-    right: 585px;
+    left: 222px;
     position: absolute;
     text-align: right;
     text-decoration: none;
     text-transform: uppercase;
-    top: 235px;
     width: 217px;	
 }
 
@@ -323,12 +330,11 @@ h4 {
     font-size: 16px;
     font-weight: 900;
     height: 256px;
-    right: 301px;
+    left: 505px;
     position: absolute;
     text-align: right;
     text-decoration: none;
     text-transform: uppercase;
-    top: 235px;
     width: 217px;	
 }
 
@@ -338,12 +344,11 @@ h4 {
     font-size: 16px;
     font-weight: 900;
     height: 256px;
-    right: 19px;
+    left: 791px;
     position: absolute;
     text-align: right;
     text-decoration: none;
     text-transform: uppercase;
-    top: 235px;
     width: 217px;	
 }
 
@@ -592,26 +597,30 @@ h4 {
 }
 @media screen and (max-width: 1000px) {
 	.featured_speakers {
-	    width:800px;
 		position:relative;
 		height:387px;
 	}
 	.featured_speakers .overlay {
-		background-size:111%;
-		background-position: -84px 34px;
+		background-position: 0 0;
+		position:absolute;
+		bottom:0;
 		
 	}
 	.overlay a {
-		top:177px !important;
+		top:171px !important;
 	}
 	#marty {
-		right:251px;
+		left:auto;
+		right:35%;
+		
 	}
 	#peter {
-		right:490px;
+		left:auto;
+		right:65%;
 	}
 	#cameron {
-		right:3px;
+		left:auto;
+		right:5%;
 	}
 	
 	.speakers {
