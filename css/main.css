@@ -288,7 +288,7 @@ h4 {
 
 .featured_speakers {
 	width:100%;
-	height:415px;
+	height:354px;
 	background:url("../img/bg_featured_speakers.jpg");
 	position:relative;
 	background-position: 50%;
@@ -307,49 +307,36 @@ h4 {
 	background:url("../img/sprite.svg") no-repeat 0 -500px;
 	color: #fff;
 }
+.featured_headshots {
+	width:800px;
+	margin:auto;
+	margin-top:122px;
+}
 .featured_speakers a {
 	top:196px;
+    font-size: 16px;
+    color: white;
+    font-weight: 900;
+    height: 256px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 217px;
+	display:block;
+	float:left;
+	margin-right:68px;
 }
 #peter {
 	background: url("../img/headshots_featured.png") no-repeat scroll 0 33px;
-    color: white;
-    font-size: 16px;
-    font-weight: 900;
-    height: 256px;
-    left: 222px;
-    position: absolute;
-    text-align: right;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 217px;	
 }
 
 #marty {
 	background: url("../img/headshots_featured.png") no-repeat scroll 0 -264px;
-    color: white;
-    font-size: 16px;
-    font-weight: 900;
-    height: 256px;
-    left: 505px;
-    position: absolute;
-    text-align: right;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 217px;	
 }
 
 #cameron {
 	background: url("../img/headshots_featured.png") no-repeat scroll 0 -566px;
-    color: white;
-    font-size: 16px;
-    font-weight: 900;
-    height: 256px;
-    left: 791px;
-    position: absolute;
-    text-align: right;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: 217px;	
+	margin-right:0;
 }
 
 .speakers {
@@ -598,34 +585,23 @@ h4 {
 @media screen and (max-width: 1000px) {
 	.featured_speakers {
 		position:relative;
-		height:387px;
 	}
+	
 	.featured_speakers .overlay {
-		background-position: 0 0;
+		background:url("../img/blue_mtns.svg") -111px -1px no-repeat !important;
 		position:absolute;
 		bottom:0;
 		
 	}
+	.featured_headshots a {
+		margin-left:0 !important;
+	}
 	.register, .venue p a {
 		font-weight:normal;
 	}
-	.overlay a {
-		top:171px !important;
-	}
-	#marty {
-		left:auto;
-		right:35%;
-		
-	}
-	#peter {
-		left:auto;
-		right:65%;
-	}
-	#cameron {
-		left:auto;
-		right:5%;
-	}
-	
+		#cameron {
+			margin-right:0 !important;
+		}
 	.speakers {
 	    width:800px;
 	}
