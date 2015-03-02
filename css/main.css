@@ -73,11 +73,11 @@ body {
 	width:100%;
 }
 .nav_bar h3 span {
-	background:url("../img/sprite.svg") 100px -1301px  ;
+	background:url("../img/sprite.svg") 46px -1301px  ;
 	display:block;
 	float:left;
 	margin-right:20px;
-	width:143px;
+	width:93px;
 	height:49px;
 	position:relative;
 	top:16px;
@@ -140,7 +140,7 @@ body {
 	padding-top:55px;
 }
 .about_container {
-	max-width:900px;
+	max-width:1100px;
 	margin:auto;
 }
 .about h3 {
@@ -586,14 +586,14 @@ background:url("../img/mtns.svg") no-repeat;
 	font-weight:300;
 }
 .footer p {
-	width:1024px;
-	margin:auto;
+	margin-left:45px;
 }
 .footer span {
 	float:right;
 	text-align:right;
 	width:400px;
 	font-size:10px;
+	margin-right:45px;
 	
 }
 
@@ -684,10 +684,6 @@ background:url("../img/mtns.svg") no-repeat;
 	.venue .overlay {
 		top:43px;
 		height:366px;
-	}	
-	.footer p {
-		width:600px;
-		padding:0 100px;
 	}
 }
 
