@@ -57,7 +57,7 @@ table {
 }
 body {
 	font-family: 'Lato', sans-serif;
-	background:#F7F7F7;
+	background:#fff;
 }
 
 .nav_bar {
@@ -139,6 +139,10 @@ body {
 	text-align:center;
 	padding-top:55px;
 }
+.about_container {
+	max-width:900px;
+	margin:auto;
+}
 .about h3 {
 	margin: 0 100px 0 100px;
 	background:none;
@@ -216,14 +220,17 @@ h4 {
 
 
 .sponsors {
-	width:979px;
-	height:590px;
-	margin:auto;
+	width:100%;
+	height:650px;
 	background:#fff;
-	padding:70px 0 0 45px;
+}
+.sponsors_container {
+	width:970px;
+	margin:auto;
+	padding:30px 0 0 45px;
 }
 .sponsors h4 {
-	margin-left:0;
+	margin-left:45px;
 }
 .sponsors a {
 	float:left;
@@ -340,7 +347,7 @@ h4 {
 }
 
 .speakers {
-	width:1024px;
+	width:100%;
 	margin:auto;
 	background:white;
 	padding-top:100px;
@@ -361,11 +368,15 @@ h4 {
     width: 223px;
 	margin-right:44px;
 }
+.speaker_container {
+	width:1026px;
+	margin:auto;
+}
 .speakers h4 {
 	margin-bottom:70px;
 }
 
-.speakers a:nth-child(4n+5) {  
+.speakers a:nth-child(4n+4) {  
   margin-right:0 !important;
 }
 
@@ -441,28 +452,28 @@ h4 {
 			background: url("../img/headshots.jpg") -3150px 0 no-repeat;
 		}
 
-
-
-
 .schedule {
-	width:1024px;
+	width:100%;
 	height:411px;
-	margin:auto;
 	background:url("../img/bg_schedule.jpg");
 	position:relative;
-	padding-top:50px;
-}
-.schedule h4 {
-	background:url("../img/sprite.svg") no-repeat 0 -500px;
-	color: #fff;
+	background-position: 50%;
+	background-size: cover;
+	margin: 0 auto;
 }
 .schedule .overlay {
-	background:url("../img/mtns.svg") no-repeat;
+background:url("../img/mtns.svg") no-repeat;
 	width:100%;
 	height:461px;
 	font-size:1em;
 	position:absolute;
 	top:0;
+}
+
+
+.schedule h4 {
+	background:url("../img/sprite.svg") no-repeat 0 -500px;
+	color: #fff;
 }
 .schedule p {
 	font-weight:;
@@ -496,13 +507,19 @@ h4 {
     font-weight: 100;
     letter-spacing: 4.09px;
     line-height: 34px;
-    margin: 350px 0 0 100px;
+    margin: auto;
+	margin-top:350px;
+	width:1000px;
+	text-align:center;
+}
+.schedule_container {
+	width:1024px;
+	margin:auto;
 }
 
 
-
 .venue {
-	width:1024px;
+	width:100%;
 	height:411px;
 	margin:auto;
 	background:url("../img/bg_venue.jpg");
@@ -510,6 +527,9 @@ h4 {
 	padding-top:50px;
 	border-top:1px solid white;
 	margin-bottom:80px;
+	background-position: 50%;
+	background-size: cover;
+	margin: 0 auto;
 }
 .venue h4 {
 	background:url("../img/sprite.svg") no-repeat 0 -500px;
@@ -602,18 +622,17 @@ h4 {
 		#cameron {
 			margin-right:0 !important;
 		}
-	.speakers {
-	    width:800px;
-	}
-	.speakers a, .speakers a:nth-child(4n+5) {
+	.speakers a, .speakers a:nth-child(4n+4) {
 		margin-right:65px !important;
 	}
-	.speakers a:nth-child(3n+4) {  
+	.speakers a:nth-child(3n+3) {  
 	  margin-right:0 !important;
 	}
-	
+	.speaker_container {
+		width:800px;
+		margin:auto;
+	}
 	.schedule {
-	    width:800px;
 		position:relative;
 		height:387px;
 	}
@@ -624,8 +643,8 @@ h4 {
 	#wed {
 		margin-left:97px;
 	}
-	.schedule {
-		height:355px;
+	.schedule_container {
+		width:800px;
 	}
 	.schedule p {
 		margin-left:42px;
@@ -633,23 +652,27 @@ h4 {
 	}
 	.schedule h5 {
 		font-size:24px;
-		margin-top:290px;
+		width:750px;
+		margin-top:310px;
 	}
 		.schedule .overlay {
-			background-size:99% !important;
 			top:43px;
+			height:394px;
 		}
 	
 	.sponsors {
-	    width:756px;
 		position:relative;
-		height:740px;
+		height:950px;
+		width:800px;
+		margin:auto;
+	}
+	.sponsors_container {
+		width:760px;
 	}
 	.sponsors a {
 		width:360px;
 	}
 	.venue {
-	    width:800px;
 		position:relative;
 		height:387px;
 		height:359px;;
@@ -659,8 +682,8 @@ h4 {
 		
 	}
 	.venue .overlay {
-		background-size:100% !important;
 		top:43px;
+		height:366px;
 	}	
 	.footer p {
 		width:600px;
