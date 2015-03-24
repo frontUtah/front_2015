@@ -56,13 +56,14 @@ table {
 	font-size:1px;
 }
 body {
-	font-family: 'Lato', sans-serif;
-	background:#fff;
+	font-family: "Source Sans Pro", sans-serif;
+	background:#232323;
 }
 
 .nav_bar {
 	background: #232323;
 	height:84px;
+	position:relative;
 }
 .nav_bar h3 {
 	font-size: 21px;
@@ -83,7 +84,20 @@ body {
 	top:16px;
 	text-indent:-9000px;
 }
-
+.nav_bar ul {
+	position:absolute;
+	top:34px;
+	right:40px;
+}
+.nav_bar a {
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:100;
+}
+.nav_bar a:hover {
+	text-decoration:underline;
+}
 
 .hero {
 	width:100%;
@@ -221,12 +235,11 @@ h4 {
 
 .sponsors {
 	width:100%;
-	height:650px;
+	height:760px;
 	background:#fff;
 	padding-top:100px;
 }
 .sponsors_container {
-	width:970px;
 	margin:auto;
 	padding:30px 0 0 45px;
 }
@@ -239,7 +252,7 @@ h4 {
 	display:block;
 	height:100px;
 	margin-top:60px;
-	width:320px;
+	width:33%;
 }
 #experticity {
 	background:url("../img/sprite.svg") no-repeat 78px -1000px;
@@ -296,7 +309,7 @@ h4 {
 
 .featured_speakers {
 	width:100%;
-	height:354px;
+	height:404px;
 	background:url("../img/bg_featured_speakers.jpg");
 	position:relative;
 	background-position: 50%;
@@ -351,7 +364,7 @@ h4 {
 	width:100%;
 	margin:auto;
 	background:white;
-	padding-top:100px;
+	padding:100px 0;
 }
 .speakers a {
   	background: url("../img/headshots.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -390,7 +403,7 @@ h4 {
     left: 0;
     padding: 20px 0 0 10px;
     position: absolute;
-    width: 213px;
+    width: 223px;
 	font-size: 15px;
 	color: #FFFFFF;
 	line-height: 18px;
@@ -455,7 +468,7 @@ h4 {
 
 .schedule {
 	width:100%;
-	height:411px;
+	height:641px;
 	background:url("../img/bg_schedule.jpg");
 	position:relative;
 	background-position: 50%;
@@ -476,30 +489,28 @@ background:url("../img/mtns.svg") no-repeat;
 	background:url("../img/sprite.svg") no-repeat 0 -500px;
 	color: #fff;
 }
-.schedule p {
+.schedule .day {
 	font-weight:;
 	font-size: 26px;
 	color: #FFFFFF;
 	line-height: 32px;
 	width:200px;
 	float:left;
-	margin-top:168px;
+	margin-top:28px;
 	font-size:18px;
 	font-weight:900;
-	margin-left:122px;
+	width:33%;
 }
-.schedule p strong {
+.schedule .day strong {
 	font-weight:300;
-	font-size:26px;
+	font-size:20px;
 	line-height:60px;
 	text-shadow: 0px 2px 0px rgba(0,0,0,0.26);
+	text-transform:uppercase;
 }
-.schedule p span {
+.schedule .day span {
 	font-weight:100;
 	width:200px;
-}
-#wed {
-	margin-left:100px;
 }
 .schedule h5 {
     clear: left;
@@ -514,11 +525,44 @@ background:url("../img/mtns.svg") no-repeat;
 	text-align:center;
 }
 .schedule_container {
-	width:1024px;
-	margin:auto;
+	margin-left:95px;
+}
+.schedule dl {
+	width:300px;
+}
+.schedule dt {
+	width:92px;
+	float:left;
+	font-weight:100;
+}
+
+.schedule dd {
+	float:left;
+	width:185px;
+	font-weight:500;
+}
+.workshops {
+	width:100%;
+	height:641px;
+	background:#232323;
+	position:relative;
+	background-position: 50%;
+	background-size: cover;
+	 margin: -2px 0 0 0;
+	color:white;
+}
+.workshops .first  {
+	margin-left:95px;
+}
+.talk {
+	width:50%;
 }
 
 
+.workshops h4 {
+	background:url("../img/sprite.svg") no-repeat 0 -500px;
+	color: #fff;
+}
 .venue {
 	width:100%;
 	height:411px;

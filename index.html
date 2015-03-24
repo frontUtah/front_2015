@@ -6,18 +6,29 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/flex-embed.css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/smart_menu.css"> <!-- Resource style -->
+		<script src="js/vendor/modernizr.js"></script> <!-- Modernizr -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 		<meta property="og:image" content="http://frontutah.com/img/li_share2.png" />
     </head>
     <body>
 
         <div class="nav_bar">
 	         <h3><span>Front</span> June 17, 18, &amp; 19 </h3>
-	         <!--<ul>
-	         	<li><a href="#">nav ul li a</a></li>
-	          	<li><a href="#">nav ul li a</a></li>
-	          	<li><a href="#">nav ul li a</a></li>
-	       	</ul>--> 
+			<div id="cd-nav">
+				<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+
+				<nav id="cd-main-nav">
+					<ul>
+			         	<li><a href="#">About</a></li>
+			          	<li><a href="#speakers">Speakers</a></li>
+			          	<li><a href="#schedule">Schedule</a></li>
+			          	<li><a href="#sponsors">Sponsors</a></li>
+			          	<li><a href="#venue">Venue</a></li>
+					</ul>
+				</nav>
+			</div>
+	
         </div>
 
         <div class="hero FlexEmbed FlexEmbed--3by1">
@@ -33,7 +44,7 @@
 				</div>
         </div></div>
 
-        <div class="featured_speakers content_section FlexEmbed FlexEmbed--3by1">
+        <div id="speakers" class="featured_speakers content_section FlexEmbed FlexEmbed--3by1">
 			<h4>Featured Speakers</h4>
 			<div class="overlay" data-center="background-position:0 -1px;" data-bottom-top="background-position:300px -1px;">
 			<p class="featured_headshots">
@@ -66,28 +77,97 @@
         </div>
 
 
-        <div class="schedule content_section">
+        <div id="schedule" class="schedule content_section">
 		<h4>Schedule</h4>
-			<div class="overlay" data-center-bottom="background-position:0 0;" data-bottom-top="background-position:300px 0;">
+			<div>
 			<div class="schedule_container">
-					<p id="wed"><strong>Wed June 17</strong><br />
-					<span>8am - 6pm</span>      	Workshops</p>
-					
-						<p id="thurs"><strong>Thurs June 18</strong><br />
-						<span>8am - 6pm</span>      	Talks<br /><span>7pm    </span>   		Party/Concert</p>
-						
-							<p id="fri"><strong>Fri June 19</strong><br />
-							<span>8am - 6pm</span>      	Talks</p>
+					<div class="day" id="wed"><strong>Wednesday</strong>
+						<dl>
+						  <dt>8:00 AM</dt>
+						  <dd>Juice, coffee, fruit</dd>
+						  <dt>8:30 AM</dt>
+						  <dd>Workshop: Ben Cline</dd>
+						  <dt>10:30 AM</dt>
+						  <dd>Workshop: Cori Jones</dd>
+						  <dt>12:30 PM</dt>
+						  <dd>Lunch</dd>
+						  <dt>2:00 PM</dt>
+						  <dd>Workshop: Joe Reni</dd>
+						  <dt>4:00 PM</dt>
+						  <dd>Workshop: Steven Cohn</dd>
+						</dl>
 					</div>
+					<div class="day" id="thurs"><strong>Thursday</strong>
+						<dl>
+						  <dt>8:00 AM</dt>
+						  <dd>Juice, coffee, fruit</dd>
+						  <dt>8:50 AM</dt>
+						  <dd>Kickoff</dd>
+						  <dt>9:00 AM</dt>
+						  <dd>Talk: Cameron Moll</dd>
+						  <dt>10:00 AM</dt>
+						  <dd>Marty Cagan</dd>
+						  <dt>11:00 AM</dt>
+						  <dd>Talk: Wade Shearer</dd>
+						  <dt>11:50 AM</dt>
+						  <dd>Lunch</dd>
+						  <dt>1:30 PM</dt>
+						  <dd>Panel: Paul Mayne &amp; the DayOne Team</dd>
+						  <dt>2:30 PM</dt>
+						  <dd>Dave Smith</dd>
+						  <dt>3:20 PM</dt>
+						  <dd>Break</dd>
+						  <dt>3:50 PM</dt>
+						  <dd>Talk: Clayton Farr</dd>
+						  <dt>4:50 PM</dt>
+						  <dd>Talk: Lauren Gray</dd>
+						  <dt>7:00 PM</dt>
+						  <dd>After party/concert</dd>
+						</dl>
+					</div>
+					<div class="day" id="fri"><strong>Friday</strong>
+						<dl>
+						  <dt>8:00 AM</dt>
+						  <dd>Juice, coffee, fruit</dd>
+						  <dt>8:50 AM</dt>
+						  <dd>Kickoff</dd>
+						  <dt>9:00 AM</dt>
+						  <dd>Talk: Peter Merholz</dd>
+						  <dt>10:00 AM</dt>
+						  <dd>Matt Snyder</dd>
+						  <dt>11:00 AM</dt>
+						  <dd>Talk: Jay Fichialos</dd>
+						  <dt>11:50 AM</dt>
+						  <dd>Lunch</dd>
+						  <dt>1:30 PM</dt>
+						  <dd>Talk: Archana Thiagarajan</dd>
+						  <dt>2:30 PM</dt>
+						  <dd>Gilbert Lee</dd>
+						  <dt>3:20 PM</dt>
+						  <dd>Break</dd>
+						  <dt>3:50 PM</dt>
+						  <dd>Talk: Nate Walkingshaw</dd>
+						  <dt>4:50 PM</dt>
+						  <dd>Talk: Ingra Johnson</dd>
+						  <dt>5:40 PM</dt>
+						  <dd>Wrap-up</dd>
+						</dl>
+				</div>
+					
+			</div>
 					
 					
 					
 					
-			<h5>HIGH FIDELITY SCHEDULE COMING SOON</h5>
         </div></div>
-		
+		<div id="workshops" class="workshops content_section">
+		<h4>Workshops</h4>
+			<div class="talk first">
+				Ben Cline, Co-founder and designer at Rally Interactive (and Dribbble superhero) will be teaching us how to use motion to improve our UI design.
+			</div>
+		</div>
 
-        <div class="sponsors content_section">
+        <div id="sponsors" class="sponsors content_section">
 			<h4>Sponsors &amp; Partners</h4>
 		<div class="sponsors_container">
            <a id="experticity" href="http://experticity.com">Experticity</a>	
@@ -102,7 +182,7 @@
         </div></div>
 
 
-        <div class="venue content_section">
+        <div id="venue" class="venue content_section">
 			<h4>Venue</h4><div class="overlay" >
            <p>Infinity Event Center<br />		26 E 600 S<br />
 				Salt Lake City, UT 84111<br />
