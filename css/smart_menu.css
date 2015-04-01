@@ -81,14 +81,13 @@ header h1 {
 
 #cd-nav ul {
   /* mobile first */
+	background:#232323 !important;
   position: fixed;
   width: 90%;
   max-width: 400px;
   right: 5%;
   bottom: 20px;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
-  background: white;
   visibility: hidden;
   /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
   overflow: hidden;
@@ -187,7 +186,7 @@ header h1 {
   }
   #cd-nav li a {
     opacity: 1;
-    padding: .4em;
+    padding: 0;
     margin-left: 1.6em;
     border-bottom: none;
   }
