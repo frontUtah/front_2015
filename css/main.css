@@ -323,6 +323,18 @@ background:url("../img/overstock.svg") no-repeat center 35px;
 	#stotion {
 		background:url("../img/sprite.svg") no-repeat center -200px;
 	}
+	#beehive {
+		background:url("../img/beehive.svg") no-repeat center;
+	}
+	#slug {
+		background:url("../img/slug.svg") no-repeat center;
+	}
+	#pluralsight {
+		background:url("../img/pluralsight.svg") no-repeat center;
+	}
+		#domo {
+			background:url("../img/domo.svg") no-repeat center;
+		}
 #validately {
 	background:url("../img/sprite.svg") no-repeat center -1200px;
 }
@@ -351,6 +363,18 @@ background:url("../img/overstock.svg") no-repeat center 35px;
 }
 #axure {
 	background:url("../img/sprite.svg") no-repeat center -1700px;
+}
+#prott {
+	background:url("../img/prott.svg") no-repeat center;
+}
+#offscreen {
+	background:url("../img/offscreen.svg") no-repeat center;
+}
+#rosenfeld {
+	background:url("../img/rosenfeld.svg") no-repeat center;
+}
+#intercom {
+	background:url("../img/intercom.svg") no-repeat center;
 }
 #you {
 	opacity: 0.83;
