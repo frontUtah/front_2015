@@ -675,6 +675,12 @@ background:url("../img/overstock.svg") no-repeat center 35px;
 	width:300px;
 	display: block;
 }
+.schedule_container em {
+	font-style:italic;
+	font-size:11px;
+	position:relative;
+	top:-6px;
+}
 .schedule dl {
 	width:300px;
 }
